@@ -20,7 +20,10 @@ export class TasksComponent implements OnInit {
   }
   
   deleteTask(task:Task){
-  this.taskService.deleteTask(task).subscribe(()=>{this.tasks = this.tasks.filter(t => t.id !== task.id)})
+  this.taskService.deleteTask(task)
+  .subscribe(()=>{
+    this.tasks = this.tasks.filter(t => t.id !== task.id)
+  })
 
 }
 toggleReminder(task: Task){
@@ -28,6 +31,6 @@ toggleReminder(task: Task){
   this.taskService.updateTaskReminder(task).subscribe();
 }
 addTask(task:Task){
-  this.taskService.addTask(task).subscribe((task)=>{this.tasks.push(task)})
+ this.taskService.addTask(task).subscribe((task)=>{this.tasks.push(task)})
 }
 }

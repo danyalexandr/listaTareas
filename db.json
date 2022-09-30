@@ -11,6 +11,24 @@
       "text": "hacer las comprar para la cena",
       "day": "agosto 5 a las 17:00",
       "reminder": true
+    },
+    {
+      "text": "2 dias para encontrar un error de sintaxis",
+      "day": "hoy 19.32",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "terminar la app ",
+      "day": "hoy",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "subir la app terminada a github",
+      "day": "sha mismo",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
